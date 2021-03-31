@@ -9,6 +9,7 @@
 import React from 'react';
 import { SafeAreaView, StatusBar } from 'react-native';
 import HomeScreen from './src/screens/Home';
+import LocationSearchScreen from './src/screens/LocationSearch';
 import ResultsScreen from './src/screens/SearchResults';
 
 const App = () => {
@@ -17,7 +18,8 @@ const App = () => {
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         {/* <HomeScreen /> */}
-        <ResultsScreen />
+        {/* <ResultsScreen /> */}
+        <LocationSearchScreen />
       </SafeAreaView>
     </>
   );
