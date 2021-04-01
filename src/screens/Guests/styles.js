@@ -18,6 +18,19 @@ const styles = StyleSheet.create({
     fontSize: 18,
     color: '#474747',
   },
+  buttonSearch: {
+    backgroundColor: '#f15454',
+    marginBottom: 10,
+    marginHorizontal: 20,
+    height: 40,
+    borderRadius: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  container: {
+    justifyContent: 'space-between',
+    height: '100%',
+  },
   guestsOption: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -29,6 +42,10 @@ const styles = StyleSheet.create({
   },
   rangeAge: {
     color: '#8e8e8e',
+  },
+  textSearch: {
+    fontSize: 18,
+    color: '#fff',
   },
   totalValue: {
     marginHorizontal: 20,
