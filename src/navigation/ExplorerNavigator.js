@@ -1,7 +1,8 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import ResultsScreen from '../screens/SearchResults';
+// import ResultsScreen from '../screens/SearchResults';
 import HomeScreen from '../screens/Home';
+import SearchResultsTabNavigation from './SearchResulstTabNavigation';
 
 const Stack = createStackNavigator();
 
@@ -17,7 +18,7 @@ const ExplorerNavigator = () => {
       />
       <Stack.Screen
         name={'ResultsScreen'}
-        component={ResultsScreen}
+        component={SearchResultsTabNavigation}
         options={{
           title: 'Search your destination',
         }}
