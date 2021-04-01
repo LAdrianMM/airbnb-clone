@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
-import { View, Text, TextInput, FlatList, Pressable } from 'react-native';
+import React from 'react';
+import { View } from 'react-native';
 import styles from './styles';
-import searchData from '../../../assets/data/search';
 import { useNavigation } from '@react-navigation/native';
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 import SuggestLocation from './SuggestLocation';

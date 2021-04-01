@@ -5,6 +5,7 @@ import LocationSearchScreen from '../screens/LocationSearch';
 import GuestsScreen from '../screens/Guests';
 import HomeTabNavigator from './HomeTabNavigator';
 import ResultsScreen from '../screens/SearchResults';
+import SearchResultsMaps from '../screens/SearchResultsMaps';
 
 const Stack = createStackNavigator();
 
@@ -14,7 +15,8 @@ const Router = () => {
       <Stack.Navigator>
         <Stack.Screen
           name={'Home'}
-          component={HomeTabNavigator}
+          // component={HomeTabNavigator}
+          component={SearchResultsMaps}
           options={{
             headerShown: false,
           }}
