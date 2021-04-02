@@ -21,7 +21,7 @@ const HomeScreen = () => {
         <Text style={styles.title}>GO NEAR</Text>
         <Pressable
           style={styles.button}
-          onPress={() => console.warn('Explore press')}>
+          onPress={() => navigation.navigate('ResultsScreen')}>
           <Text style={styles.buttonText}>Explore nearby stays</Text>
         </Pressable>
       </ImageBackground>

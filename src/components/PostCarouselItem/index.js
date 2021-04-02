@@ -1,12 +1,26 @@
 import React from 'react';
-import { Image, Text, useWindowDimensions, View } from 'react-native';
+import {
+  Image,
+  Pressable,
+  Text,
+  useWindowDimensions,
+  View,
+} from 'react-native';
 import styles from './styles';
+import { useNavigation } from '@react-navigation/native';
 
 const PostCarouselItem = ({ post }) => {
   const width = useWindowDimensions().width;
+  const navigation = useNavigation();
+
+  const goToPageDaetails = () => {
+    navigation.navigate('Post', { postId: post.id });
+  };
 
   return (
-    <View style={[styles.container, { width: width - 60 }]}>
+    <Pressable
+      onPress={goToPageDaetails}
+      style={[styles.container, { width: width - 60 }]}>
       <View style={styles.innerContainer}>
         <Image source={{ uri: post.image }} style={styles.image} />
         <View style={styles.info}>
@@ -22,7 +36,7 @@ const PostCarouselItem = ({ post }) => {
           </Text>
         </View>
       </View>
-    </View>
+    </Pressable>
   );
 };
 

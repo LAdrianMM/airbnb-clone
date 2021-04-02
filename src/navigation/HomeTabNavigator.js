@@ -7,6 +7,9 @@ import FontAwesome5 from 'react-native-vector-icons/FontAwesome5';
 import Feather from 'react-native-vector-icons/Feather';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import ExplorerNavigator from './ExplorerNavigator';
+import SavedScreen from '../screens/SavedScreen';
+import MessageScreen from '../screens/MessageScreen';
+import ProfileScreen from '../screens/ProfileScreen';
 
 const Tab = createBottomTabNavigator();
 const HomeTabNavigator = () => {
@@ -26,7 +29,7 @@ const HomeTabNavigator = () => {
       />
       <Tab.Screen
         name={'Saved'}
-        component={HomeScreen}
+        component={SavedScreen}
         options={{
           tabBarIcon: ({ color }) => (
             <FontAwesome name="heart-o" size={25} color={color} />
@@ -34,7 +37,7 @@ const HomeTabNavigator = () => {
         }}
       />
       <Tab.Screen
-        name={'Airbnb'}
+        name={'Home'}
         component={HomeScreen}
         options={{
           tabBarIcon: ({ color }) => (
@@ -44,7 +47,7 @@ const HomeTabNavigator = () => {
       />
       <Tab.Screen
         name={'Messages'}
-        component={HomeScreen}
+        component={MessageScreen}
         options={{
           tabBarIcon: ({ color }) => (
             <Feather name="message-square" size={25} color={color} />
@@ -53,7 +56,7 @@ const HomeTabNavigator = () => {
       />
       <Tab.Screen
         name={'Profile'}
-        component={HomeScreen}
+        component={ProfileScreen}
         options={{
           tabBarIcon: ({ color }) => (
             <EvilIcons name="user" size={25} color={color} />
